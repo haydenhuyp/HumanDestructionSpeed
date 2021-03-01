@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    padding: 2% 0 0 2%;
+}
+h2{
+    padding: 1% 0 2% 2%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+#submenu
+{
+    display: none;
+}
+
+main{
+    display: grid;
+    grid-template: repeat(2, 25vh) / repeat(4, 20vw);
+    grid-gap: 15px 20px;
+    grid-gap: 3vh 2vw;
+    justify-content: center;
+}
+main div{
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+footer{
+    text-align: center;
+    padding: 2% 0 0 0.5%;
+}
+footer p{
+    font-style: italic;
+    padding: 0.5% 0;
+}
