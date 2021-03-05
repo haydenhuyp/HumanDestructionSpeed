@@ -35,12 +35,22 @@ main{
     justify-content: center;
 }
 main div{
-    background-color: silver;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: x-large;
+
+    filter: grayscale(80%);
+    background-size: cover;
+}
+#deforestation{
+    background-image: url(images/index/deforestation.png);
+}
+main div:hover, main div:focus{
+    filter: none;
+    font-size: xx-large;
+    cursor: pointer;
 }
 footer{
     text-align: center;
