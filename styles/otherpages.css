@@ -1,0 +1,19 @@
+#text h3 {
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 1%;
+}
+#text p{
+    padding-left: 3%;
+}
+#source{
+    padding-top: 1%;
+    font-weight: bold;
+}
+#source a{
+    color: white;
+    font-weight: normal;
+}
+#source a:hover, #source a:focus{
+    font-style: italic;
+}

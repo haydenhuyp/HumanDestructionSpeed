@@ -10,10 +10,10 @@ html{
 a{
     text-decoration: none;
 }
-h1{
+#headerText h1{
     padding: 2% 0 0 2%;
 }
-h2{
+#headerText h2{
     padding: 1% 0 2% 2%;
 }
 header #fast{
@@ -36,6 +36,8 @@ footer p{
     font-style: italic;
     padding: 0.5% 0;
 }
-#aboutme{
+#lastword{
     font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+    font-size: larger;
 }
