@@ -12,32 +12,45 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/menu.css">
     </head>
     <body>
         <header>
             <div id="headerText">
-                <h1>Human Destroy Speed Visualized</h1>
-                <h2>Descriptive text</h2>
+                <h1>Human Destroy Speed</h1>
+                <h2>How <span id="fast">fast</span> are we <span id="destroy">DESTROYING</span> the <span id="nature">nature</span> of our <span id="own">OWN</span> planet?</h2>
             </div>
         </header>
         <main>
-            <div id="deforestation">Deforestation</div>
-            <!--http://www.fao.org/state-of-forests/en/#:~:text=Between%202015%20and%202020%2C%20the,80%20million%20hectares%20since%201990.-->
-            <div>Species Extinction</div>
-            <!--https://www.un.org/sustainabledevelopment/blog/2019/05/nature-decline-unprecedented-report/#:~:text=The%20Report%20finds%20that%20around,20%25%2C%20mostly%20since%201900.-->
-            <div id="landextinction">Land Species</div>
-            
-            <div id="oceanextinction">Ocean Species</div>
-            <!--https://www.nationalgeographic.com/environment/article/ocean-species-disappear-faster-climate-change-impacts-cold-blooded-animals-harder-->
-            <div id="desertification">Desertification</div>
-            <!--https://www.nationalgeographic.com/environment/article/desertification-->
-            
-            <div id="plastic">Plastic Pollution</div>
-            <div id="chemical">Chemical</div>
-            <div id="airpollution">Air Pollution</div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Deforestation</a></li>
+                    <li><a href="#">Land Species</a></li>
+                    <li><a href="#">Ocean Species</a></li>
+                    <li><a href="#">Desertification</a></li>
+                    <li><a href="#">Plastic Pollution</a></li>
+                    <li><a href="#">Air Pollution</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                </ul>
+            </div>
+            <section id="pictures">
+                <div id="deforestation" class="picture">Deforestation</div>
+                <!--http://www.fao.org/state-of-forests/en/#:~:text=Between%202015%20and%202020%2C%20the,80%20million%20hectares%20since%201990.-->
+                <div id="landextinction"class="picture">Land Species</div>
+                
+                <div id="oceanextinction" class="picture">Ocean Species</div>
+                <!--https://www.nationalgeographic.com/environment/article/ocean-species-disappear-faster-climate-change-impacts-cold-blooded-animals-harder-->
+                <div id="desertification" class="picture">Desertification</div>
+                <!--https://www.nationalgeographic.com/environment/article/desertification-->
+                
+                <div id="plastic" class="picture">Plastic Pollution</div>
+                <div id="airpollution" class="picture">Air Pollution</div>
+            </section>
         </main>
         <footer>
-            <p><a href="#" id="info">More Information About This Website</a></p>
+            <p><a href="#" id="info">More Information</a></p>
         </footer>
     </body>
 </html>

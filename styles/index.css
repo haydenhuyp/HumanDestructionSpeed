@@ -1,0 +1,57 @@
+main section{
+    display: grid;
+    grid-template: repeat(2, 25vh) / repeat(3, 25vw);
+    grid-gap: 15px 20px;
+    grid-gap: 3vh 2vw;
+    justify-content: center;
+}
+main section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+
+    filter: grayscale(80%);
+    background-size: cover;
+}
+#deforestation{
+    background-image: url(../images/index/deforestation.png);
+}
+#deforestation:hover, #deforestation:focus{
+    color: #433520;
+}
+
+#landextinction{
+    background-image: url(../images/index/animalonland.jpg);
+    /*https://www.treehugger.com/thmb/IYtlooqD-QLFQG3vJ0nS1oamExo=/1000x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2019__03__TrioGiraffesNearTreeSavanna-a7237f89a0ba4ec18c71ddd0ed2c2031.jpg*/
+}
+
+#oceanextinction{
+    background-image: url(https://c.pxhere.com/photos/2f/4b/turtle_underwater_water_swimming_animal_aquatic_marine_tortoise-741871.jpg!d);
+}
+
+#desertification{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/90/Anti_desertification_sand_fences_south_of_the_town_of_Erfoud%2C_Morocco.jpg);
+}
+#desertification:hover, #desertification:focus{
+    color: black;
+}
+
+#plastic{
+    background-image: url(../images/index/plastic.jpg);
+    /*https://pixnio.com/miscellaneous/junkyards-pictures/plastic-pollution-pacific-gyre-garbage-patch#*/
+}
+
+#airpollution{
+    background-image: url(../images/index/airpollution.jpg);
+    /*https://www.flickr.com/photos/un_photo/5410822714*/
+}
+#airpollution:hover, #airpollution:focus{
+    color: black;
+}
+main div.picture:hover, main div.picure:focus{
+    filter: none;
+    font-size: xx-large;
+    cursor: pointer;
+}
