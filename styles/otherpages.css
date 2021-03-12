@@ -1,3 +1,6 @@
+#text{
+    font-family: 'Quicksand', sans-serif;
+}
 #text h3 {
     font-size: x-large;
     text-align: center;
@@ -16,4 +19,7 @@
 }
 #source a:hover, #source a:focus{
     font-style: italic;
+}
+section#jsarea{
+    padding: 2%;
 }
