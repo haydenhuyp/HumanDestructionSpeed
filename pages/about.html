@@ -9,13 +9,24 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+        <!-- CSS -->
         <link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="../styles/menu.css">
         <link rel="stylesheet" href="../styles/otherpages.css">
+        <link rel="stylesheet" href="../styles/about.css">
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script>
+            $(document).ready(function() {
+              $("#aboutme").show("drop", 1000 );
+            });
+        </script>
     </head>
-    <body onload="main(0);">
+    <body>
         <header>
             <div id="headerText">
                 <h1>Human Destruction Speed</h1>
@@ -32,16 +43,20 @@
                     <li><a href="desertification.html">Desertification</a></li>
                     <li><a href="plasticpollution.html">Plastic Pollution</a></li>
                     <li><a href="airpollution.html">Air Pollution</a></li>
-                    <li><a href="#" class="athere">About</a></li>
+                    <li><a href="#" class="current">About</a></li>
                 </ul>
             </div>
             <section id="text">
                 <h3>About this webpage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, deleniti quia. Et possimus eligendi tempore repellat, id dicta! Dignissimos quo suscipit ipsam recusandae, atque harum iste id molestiae sapiente placeat.</p>
-                <p id="source">Source: <a href="#">Link</a></p>
-            </section>
-
-            <section id="jsarea">
+                <p>My purpose of this webpage is to raise people's awareness of how fast are we destroying our planet 
+                    and encourage people to choose environmental friendly products. I want to make my modest contribution towards making Earth a better place for all species. Thank you so much for visiting my webpage.</p>
+                
+                <address>
+                    <h3 id="aboutme">About Me</h3>
+                    <p><b>Name:</b> Huy Pham</p>
+                    <p><b>Email:</b> <a href="mailto: hayden.huyp@gmail.com">hayden.huyp@gmail.com</a></p>
+                    <p><b>GitHub:</b> <a href="https://github.com/haydenhuyp">github.com/haydenhuyp</a></p>
+                </address>
                 
             </section>
         </main>

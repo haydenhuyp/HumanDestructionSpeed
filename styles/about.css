@@ -1,0 +1,20 @@
+h3#aboutme{
+    padding-top: 2%;
+}
+address{
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+address p{
+    padding: 0.5% 0;
+}
+address a{
+    text-decoration: underline;
+    font-weight: normal;
+    color: white;
+    transition: font-weight 0.3s ease-out 0.3s, color 0.3s ease-in 0.3s;
+}
+address a:hover, address a:focus{
+    font-weight: bold;
+    color: yellow;
+}

@@ -15,8 +15,17 @@ function innitialAdd(n, imglink) {
     endNumber = n;
 }
 // rate = item/seconds
-function add(rate) {
+function add(rate, link) {
+    innitial(1000);
 
+    let i=0;
+    setInterval(function(){
+        addItem(i, link);
+        i++;
+    }, rate);
+}
+function addItem(itemID, link){
+    document.getElementById(itemID).src=link;
 }
 function remove(rate) {
     let i=endNumber-1;
@@ -35,12 +44,6 @@ function note(figure, imglink, explanation) {
     document.getElementById("explanation").innerHTML = explanation;
 }
 function main(variations) {
-    /*var link="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tree-256x256.png";
-    var pictures = ["https://upload.wikimedia.org/wikipedia/commons/3/3e/Tree-256x256.png"];
-    
-    var ok=1;
-    document.getElementById("1".toString()).src=link;*/
-
     let imglink = "";
     switch (variations) {
         case "airpollution":
@@ -58,18 +61,28 @@ function main(variations) {
         
         case "desertification":
             imglink = "../images/icon/desert.png";
+            note("Global Desertification Rate - 24 billion tons of fertile land lost every year", imglink, "represents 24 BILLION TONS of fertile land, each second represent a year");
+            add(1200, imglink);
             break;
 
         case "landspecies":
             imglink = "../images/icon/landspecies.png";
+            innitialAdd(500, imglink);
+            note("Land Species Extinction Rate - up to 10,000 times higher than the natural extinction rate!", imglink, "represents 200 THOUSANDS soon-extinct species, each second represents 20 years.");
+            remove(1100);
             break;
 
         case "oceanspecies":
             imglink = "../images/icon/oceanspecies.png";
+            innitialAdd(500, imglink);
+            note("Ocean Species Extinction Rate - thosand times higher than the natural baseline rate!", imglink, "represents 200 THOUSANDS soon-extinct species, each second represents 20 years.");
+            remove(1100);
             break;
 
         case "plasticpollution":
             imglink = "../images/icon/plastic.png";
+            note("Plastic Objects Are Dumped Into The Ocean at an Alarming Rate - eight million tonnes a year", imglink, "represents one full garbage truck of plastic, each second represents one minute.");
+            add(1100, imglink);
             break;
 
         default:
