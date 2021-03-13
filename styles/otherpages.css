@@ -16,10 +16,25 @@
 #source a{
     color: white;
     font-weight: normal;
+    text-decoration: underline;
 }
 #source a:hover, #source a:focus{
     font-style: italic;
+    font-weight: bold;
+    color: yellow;
+}
+#figure{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    padding: 1.5% 0 0 0;
 }
 section#jsarea{
     padding: 2%;
+}
+div#legend{
+    padding-left: 3%;
+}
+#note, #legendimg, #explanation{
+    display: inline;
 }
