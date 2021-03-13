@@ -1,3 +1,4 @@
+/* CSS especially for index page */
 main section{
     display: grid;
     grid-template: repeat(2, 25vh) / repeat(3, 25vw);

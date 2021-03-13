@@ -1,9 +1,16 @@
+<!--
+    about.html
+    About this page | Human Destruction Speed Webpage
+
+    Revision history: see in https://github.com/haydenhuyp/NatureDestructionSpeed
+        Finished on March 14th 2021 by Huy Pham
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>About | Human Destruction Speed</title>
         <script src="../javascript.js"></script>
-        <!-- -------------------- -->
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
@@ -15,18 +22,9 @@
         <link rel="stylesheet" href="../styles/menu.css">
         <link rel="stylesheet" href="../styles/otherpages.css">
         <link rel="stylesheet" href="../styles/about.css">
-
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-        <script>
-            $(document).ready(function() {
-              $("#aboutme").show("drop", 1000 );
-            });
-        </script>
+        <link rel="stylesheet" href="../styles/normalize.css">
     </head>
-    <body>
+    <body onload="printSlogan();">
         <header>
             <div id="headerText">
                 <h1>Human Destruction Speed</h1>
@@ -48,16 +46,15 @@
             </div>
             <section id="text">
                 <h3>About this webpage</h3>
-                <p>My purpose of this webpage is to raise people's awareness of how fast are we destroying our planet 
-                    and encourage people to choose environmental friendly products. I want to make my modest contribution towards making Earth a better place for all species. Thank you so much for visiting my webpage.</p>
-                
+                <p>The purpose of this webpage is to raise people's awareness of how fast are we destroying our planet 
+                    and encourage people to choose environmental friendly products. Although there are still a lot of 'clumsy' things, I am really happy that I could make my modest contribution towards making Earth a better place for all species. Thank you so much for visiting my webpage.</p>  
                 <address>
                     <h3 id="aboutme">About Me</h3>
                     <p><b>Name:</b> Huy Pham</p>
                     <p><b>Email:</b> <a href="mailto: hayden.huyp@gmail.com">hayden.huyp@gmail.com</a></p>
                     <p><b>GitHub:</b> <a href="https://github.com/haydenhuyp">github.com/haydenhuyp</a></p>
+                    <p><b>Linkedin:</b> <a href="https://www.linkedin.com/in/haydenhuy/">linkedin.com/in/haydenhuy</a></p>
                 </address>
-                
             </section>
         </main>
         <footer>
