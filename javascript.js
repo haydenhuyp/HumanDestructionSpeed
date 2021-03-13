@@ -1,5 +1,3 @@
-/*var link="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tree-256x256.png";*/
-var link = "../images/icon/resized.png";
 let numberOfSlots = 0;
 let endNumber = 0;
 function innitial(n) {
@@ -59,22 +57,23 @@ function main(variations) {
             break;
         
         case "desertification":
-
+            imglink = "../images/icon/desert.png";
             break;
 
         case "landspecies":
-
+            imglink = "../images/icon/landspecies.png";
             break;
 
         case "oceanspecies":
-
+            imglink = "../images/icon/oceanspecies.png";
             break;
 
         case "plasticpollution":
-
+            imglink = "../images/icon/plastic.png";
             break;
 
         default:
+            console.log("Error with parameter(s)");
             break;
     }
 }
